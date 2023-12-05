@@ -1,0 +1,8 @@
+// wit/host.wit
+package client:sensor;
+
+world sensor {
+    export get-request-bytes: func(addr: u8, key: u8) -> result<list<u8>, string>;
+    export get-info: func() -> list<u8>;
+    export get-rs: func(addr: u8, key: u8, data: list<u8>) -> result<option<list<u8>>, string>;
+}

@@ -1,0 +1,14 @@
+[package]
+name = "host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = { workspace = true }
+custom-utils = { workspace = true }
+anyhow = { workspace = true }
+wasmtime = { workspace = true }
+wasmtime-wasi = { workspace = true }
+models = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
